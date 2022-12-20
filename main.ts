@@ -1,0 +1,10 @@
+basic.showIcon(IconNames.Square)
+basic.forever(function () {
+    pins.digitalWritePin(DigitalPin.P13, 0)
+    pins.digitalWritePin(DigitalPin.P14, 0)
+    basic.pause(2000)
+    pins.digitalWritePin(DigitalPin.P13, 0)
+    pins.digitalWritePin(DigitalPin.P14, 1)
+    pins.analogWritePin(AnalogPin.P15, 503)
+    basic.pause(2000)
+})
